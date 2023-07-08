@@ -72,7 +72,7 @@ resp := client.SendWithStream(context.TODO(), "Tell me a joke", []openaiAPI.Mess
 ```
 
 ### Some real world examples
-Here are some [real world](https://github.com/MrBanja/gcli) examples of how to use the OpenAI API package:
+Here are some [real world](https://github.com/MrBanja/gcli/blob/b8cd6d7f49fbbcb89252254da3ab3b41713421c5/internal/controller/flow_controller.go#L25) examples of how to use the OpenAI API package:
 
 ```go
 func (f *FlowController) Stream(prompt string) error {
