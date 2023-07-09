@@ -68,7 +68,7 @@ messages = append(
     openaiAPI.Message{Role: openaiAPI.RoleUser, Content: "Hi"},
     openaiAPI.Message{Role: openaiAPI.RoleAssistant, Content: "Hello, how are you?"},
 )
-resp := client.SendWithStream(context.TODO(), "Tell me a joke", []openaiAPI.Message{})
+resp := client.SendWithStream(context.TODO(), "Tell me a joke", messages)
 ```
 
 ### Some real world examples
